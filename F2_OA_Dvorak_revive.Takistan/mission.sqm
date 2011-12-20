@@ -1,0 +1,3891 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"takistan",
+		"ca_highcommand",
+		"ca_modules_marta",
+		"ca_missions_firstaidsystem",
+		"ca_missions_battlefieldclearance",
+		"ca_missions_alternativeinjurysimulation",
+		"ca_modules_functions",
+		"CACharacters_BAF"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ca_modules_functions",
+		"CACharacters_BAF",
+		"takistan"
+	};
+	randomSeed=4931020;
+	class Intel
+	{
+		briefingName="F2_OA_Dvorak_revive";
+		briefingDescription="*** Insert mission description here. ***";
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=8;
+		minute=0;
+	};
+	class Groups
+	{
+		items=74;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8034.0718,296.04001,1864.3541};
+					id=0;
+					side="GUER";
+					vehicle="TK_GUE_Warlord_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitGUE_CO";
+					init="GrpGUE_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Commander";
+				};
+				class Item1
+				{
+					position[]={8036.0649,296.04001,1862.3517};
+					id=1;
+					side="GUER";
+					vehicle="TK_GUE_Bonesetter_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_CO_M";
+					init="GrpGUE_CO = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Medic";
+				};
+			};
+		};
+		class Item1
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8034.8145,296.04001,1850.0697};
+					id=2;
+					side="GUER";
+					vehicle="TK_GUE_Warlord_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitGUE_DC";
+					init="GrpGUE_DC = group this; nul = [""dc"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={8037.7026,296.04001,1847.6866};
+					id=3;
+					side="GUER";
+					vehicle="TK_GUE_Bonesetter_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_DC_M";
+					init="GrpGUE_DC = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Medic";
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8050.3413,296.04001,1834.9398};
+					id=4;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Alpha_FTL";
+					init="GrpGUE_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Alpha Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8053.2295,296.04001,1832.5568};
+					id=5;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Alpha_AR";
+					init="GrpGUE_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8055.5742,296.04001,1832.4752};
+					id=6;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Alpha_AAR";
+					init="GrpGUE_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8058.0933,296.04001,1832.4386};
+					id=7;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Alpha_RRPG";
+					init="GrpGUE_Alpha = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Alpha Rifleman (RPG)";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7949.5659,300.0856,2427.0493};
+					id=8;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7954.9829,299.57101,2348.0762};
+					id=9;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="server";
+				};
+			};
+		};
+		class Item5
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8049.6567,296.04001,1808.7191};
+					id=10;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Bravo_FTL";
+					init="GrpGUE_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Bravo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8052.5449,296.04001,1806.3361};
+					id=11;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Bravo_AR";
+					init="GrpGUE_Bravo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Bravo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8054.8896,296.04001,1806.2545};
+					id=12;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Bravo_AAR";
+					init="GrpGUE_Bravo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Bravo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8057.4087,296.04001,1806.2179};
+					id=13;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Bravo_RRPG";
+					init="GrpGUE_Bravo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Bravo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item6
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8049.1616,296.04001,1785.4274};
+					id=14;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Charlie_FTL";
+					init="GrpGUE_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Charlie Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8052.0498,296.04001,1783.0443};
+					id=15;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Charlie_AR";
+					init="GrpGUE_Charlie = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Charlie Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8054.3945,296.04001,1782.9628};
+					id=16;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Charlie_AAR";
+					init="GrpGUE_Charlie = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Charlie Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8056.9136,296.04001,1782.9261};
+					id=17;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Charlie_RRPG";
+					init="GrpGUE_Charlie = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Charlie Rifleman (RPG)";
+				};
+			};
+		};
+		class Item7
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8081.2612,296.04001,1833.7147};
+					id=18;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Delta_FTL";
+					init="GrpGUE_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Delta Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8084.1494,296.04001,1831.3317};
+					id=19;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Delta_AR";
+					init="GrpGUE_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8086.4941,296.04001,1831.2501};
+					id=20;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Delta_AAR";
+					init="GrpGUE_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8089.0132,296.04001,1831.2135};
+					id=21;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Delta_RRPG";
+					init="GrpGUE_Delta = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Delta Rifleman (RPG)";
+				};
+			};
+		};
+		class Item8
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8081.0942,296.04001,1807.441};
+					id=22;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Echo_FTL";
+					init="GrpGUE_Echo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Echo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8083.9824,296.04001,1805.058};
+					id=23;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Echo_AR";
+					init="GrpGUE_Echo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Echo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8086.3271,296.04001,1804.9764};
+					id=24;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Echo_AAR";
+					init="GrpGUE_Echo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Echo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8088.8462,296.04001,1804.9398};
+					id=25;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Echo_RRPG";
+					init="GrpGUE_Echo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Echo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item9
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8080.5625,296.04001,1784.118};
+					id=26;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Fox_FTL";
+					init="GrpGUE_Fox = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Fox Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8083.4507,296.04001,1781.735};
+					id=27;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_Fox_AR";
+					init="GrpGUE_Fox = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Fox Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8085.7954,296.04001,1781.6534};
+					id=28;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_2_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Fox_AAR";
+					init="GrpGUE_Fox = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Fox Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8088.3145,296.04001,1781.6168};
+					id=29;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_Fox_RRPG";
+					init="GrpGUE_Fox = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Fox Rifleman (RPG)";
+				};
+			};
+		};
+		class Item10
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8110.6445,296.04001,1833.549};
+					id=30;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_MG_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_MMG1_G";
+					init="GrpGUE_MMG1 = group this; nul = [""mmgg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Medium MG Team 1 Gunner";
+					synchronizations[]={30};
+				};
+				class Item1
+				{
+					position[]={8113.5327,296.04001,1831.1659};
+					id=31;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_MMG1_AG";
+					init="GrpGUE_MMG1 = group this; nul = [""mmgag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item11
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8110.3789,296.04001,1807.3549};
+					id=32;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_MAT1_G";
+					init="GrpGUE_MAT1 = group this; nul = [""matg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={8113.2671,296.04001,1804.9718};
+					id=33;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_MAT1_AG";
+					init="GrpGUE_MAT1 = group this; nul = [""matag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item12
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8110.2036,296.04001,1783.9623};
+					id=34;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitGUE_ST1_SN";
+					init="GrpGUE_ST1 = group this; nul = [""sn"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Sniper Team 1 Sniper";
+					synchronizations[]={34};
+				};
+				class Item1
+				{
+					position[]={8113.0928,296.04001,1780.974};
+					id=35;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_4_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitGUE_ST1_SP";
+					init="GrpGUE_ST1 = group this; nul = [""sp"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Local Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item13
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={8148.9126,296.04001,1833.4515};
+					id=36;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item1
+				{
+					position[]={8151.9946,296.04001,1830.4677};
+					id=37;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item2
+				{
+					position[]={8154.9644,296.04001,1830.5612};
+					id=38;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item3
+				{
+					position[]={8157.9199,296.04001,1830.5602};
+					id=39;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item4
+				{
+					position[]={8149.0996,296.04001,1825.8251};
+					id=40;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item5
+				{
+					position[]={8152.0693,296.04001,1825.9186};
+					id=41;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item6
+				{
+					position[]={8155.0249,296.04001,1825.9176};
+					id=42;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+				class Item7
+				{
+					position[]={8158.1006,296.04001,1826.0365};
+					id=43;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_3_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpGUE_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Local RESERVED FOR JIP";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8229.2793,296.04001,1986.2015};
+					id=44;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitUS_CO";
+					init="GrpUS_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Commander";
+				};
+				class Item1
+				{
+					position[]={8232.5176,296.04001,1983.7655};
+					id=45;
+					side="WEST";
+					vehicle="US_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_CO_M";
+					init="GrpUS_CO = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Medic";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8228.8965,296.04001,1971.2921};
+					id=46;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitUS_DC";
+					init="GrpUS_DC = group this; nul = [""dc"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={8232.1348,296.11075,1968.8561};
+					id=47;
+					side="WEST";
+					vehicle="US_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_DC_M";
+					init="GrpUS_DC = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Medic";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8251.1777,296.04001,1955.7748};
+					id=48;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Alpha_FTL";
+					init="GrpUS_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8253.5996,296.04001,1952.8009};
+					id=49;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Alpha_AR";
+					init="GrpUS_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8256.3516,296.04001,1952.6582};
+					id=50;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Alpha_AAR";
+					init="GrpUS_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8259.7861,296.04001,1952.6292};
+					id=51;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Alpha_AT";
+					init="GrpUS_Alpha = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Rifleman (AT)";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8250.4629,296.04001,1932.4114};
+					id=52;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Bravo_FTL";
+					init="GrpUS_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Bravo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8252.8848,296.04001,1929.4375};
+					id=53;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Bravo_AR";
+					init="GrpUS_Bravo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Bravo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8255.6367,296.04001,1929.2948};
+					id=54;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Bravo_AAR";
+					init="GrpUS_Bravo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Bravo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8259.0723,296.04001,1929.2657};
+					id=55;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Bravo_AT";
+					init="GrpUS_Bravo = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Bravo Rifleman (AT)";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8251.9199,296.04001,1907.3817};
+					id=56;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Charlie_FTL";
+					init="GrpUS_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Charlie Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8254.3418,296.04001,1904.4078};
+					id=57;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Charlie_AR";
+					init="GrpUS_Charlie = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Charlie Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8257.0938,296.04001,1904.2651};
+					id=58;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Charlie_AAR";
+					init="GrpUS_Charlie = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Charlie Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8260.5283,296.04001,1904.2361};
+					id=59;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Charlie_AT";
+					init="GrpUS_Charlie = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Charlie Rifleman (AT)";
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8280.0703,296.04001,1955.6786};
+					id=60;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Delta_FTL";
+					init="GrpUS_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8282.4932,296.04001,1952.7047};
+					id=61;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Delta_AR";
+					init="GrpUS_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8285.2451,296.04001,1952.562};
+					id=62;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Delta_AAR";
+					init="GrpUS_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8288.6797,296.04001,1952.533};
+					id=63;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Delta_AT";
+					init="GrpUS_Delta = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Rifleman (AT)";
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8279.7422,296.04001,1932.3181};
+					id=64;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Echo_FTL";
+					init="GrpUS_Echo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Echo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8282.1641,296.04001,1929.3442};
+					id=65;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Echo_AR";
+					init="GrpUS_Echo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Echo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8284.916,296.04001,1929.2015};
+					id=66;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Echo_AAR";
+					init="GrpUS_Echo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Echo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8288.3506,296.04001,1929.1725};
+					id=67;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Echo_AT";
+					init="GrpUS_Echo = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Echo Rifleman (AT)";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8280.2725,296.04001,1906.9329};
+					id=68;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Fox_FTL";
+					init="GrpUS_Fox = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Fox Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8282.6953,296.04001,1903.959};
+					id=69;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Fox_AR";
+					init="GrpUS_Fox = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Fox Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8285.4473,296.04001,1903.8163};
+					id=70;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Fox_AAR";
+					init="GrpUS_Fox = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Fox Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8288.8809,296.04001,1903.7872};
+					id=71;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Fox_AT";
+					init="GrpUS_Fox = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Fox Rifleman (AT)";
+				};
+			};
+		};
+		class Item22
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8309.498,296.04001,1954.9065};
+					id=72;
+					side="WEST";
+					vehicle="US_Soldier_MG_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_MMG1_G";
+					init="GrpUS_MMG1 = group this; nul = [""mmgg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Medium MG Team 1 Gunner";
+					synchronizations[]={72};
+				};
+				class Item1
+				{
+					position[]={8312.7363,296.04001,1952.4705};
+					id=73;
+					side="WEST";
+					vehicle="US_Soldier_AMG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_MMG1_AG";
+					init="GrpUS_MMG1 = group this; nul = [""mmgag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item23
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8308.9639,296.04001,1928.6339};
+					id=74;
+					side="WEST";
+					vehicle="US_Soldier_AT_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_MAT1_G";
+					init="GrpUS_MAT1 = group this; nul = [""matg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={8312.2031,296.04001,1926.1979};
+					id=75;
+					side="WEST";
+					vehicle="US_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_MAT1_AG";
+					init="GrpUS_MAT1 = group this; nul = [""matag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item24
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8308.8584,296.04001,1905.24};
+					id=76;
+					side="WEST";
+					vehicle="US_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_ST1_SN";
+					init="GrpUS_ST1 = group this; nul = [""sn"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Sniper Team 1 Sniper";
+					synchronizations[]={76};
+				};
+				class Item1
+				{
+					position[]={8312.0977,296.04001,1902.804};
+					id=77;
+					side="WEST";
+					vehicle="US_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_ST1_SP";
+					init="GrpUS_ST1 = group this; nul = [""sp"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item25
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={8355.7891,296.04001,1956.0593};
+					id=78;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item1
+				{
+					position[]={8359.3428,296.04001,1953.7654};
+					id=79;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item2
+				{
+					position[]={8362.4043,296.04001,1953.8165};
+					id=80;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item3
+				{
+					position[]={8365.5713,296.04001,1953.8668};
+					id=81;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item4
+				{
+					position[]={8356.3809,296.04001,1949.731};
+					id=82;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item5
+				{
+					position[]={8359.4424,296.04001,1949.7821};
+					id=83;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item6
+				{
+					position[]={8362.6094,296.04001,1949.8324};
+					id=84;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+				class Item7
+				{
+					position[]={8365.7744,296.04001,1949.7805};
+					id=85;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUS_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
+				};
+			};
+		};
+		class Item26
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8718.7168,323.6759,2437.4014};
+					id=86;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitTK_CO";
+					init="GrpTK_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Commander";
+				};
+				class Item1
+				{
+					position[]={8720.9961,323.31012,2435.4473};
+					id=87;
+					side="EAST";
+					vehicle="TK_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_CO_M";
+					init="GrpTK_CO = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Medic";
+				};
+			};
+		};
+		class Item27
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8719.3789,322.02298,2422.5464};
+					id=88;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitTK_DC";
+					init="GrpTK_DC = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={8721.6553,321.50281,2420.5928};
+					id=89;
+					side="EAST";
+					vehicle="TK_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_DC_M";
+					init="GrpTK_DC = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Medic";
+				};
+			};
+		};
+		class Item28
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8737.1201,317.27216,2406.979};
+					id=90;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Alpha_FTL";
+					init="GrpTK_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Alpha Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8739.9131,316.42944,2404.7476};
+					id=91;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Alpha_AR";
+					init="GrpTK_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8742.7959,315.85452,2404.6553};
+					id=92;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Alpha_AAR";
+					init="GrpTK_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8745.6807,315.36899,2404.6538};
+					id=93;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Alpha_RRPG";
+					init="GrpTK_Alpha = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Alpha Rifleman (RPG)";
+				};
+			};
+		};
+		class Item29
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8737.2002,313.62347,2381.6775};
+					id=94;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Bravo_FTL";
+					init="GrpTK_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Bravo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8739.9932,312.89746,2379.446};
+					id=95;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Bravo_AR";
+					init="GrpTK_Bravo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Bravo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8742.876,312.44247,2379.3538};
+					id=96;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Bravo_AAR";
+					init="GrpTK_Bravo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Bravo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8745.7607,311.99609,2379.3518};
+					id=97;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Bravo_RRPG";
+					init="GrpTK_Bravo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Bravo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item30
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8736.7158,310.47906,2360.0493};
+					id=98;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Charlie_FTL";
+					init="GrpTK_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Charlie Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8739.5088,309.90726,2357.8179};
+					id=99;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Charlie_AR";
+					init="GrpTK_Charlie = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Charlie Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8742.3916,309.67328,2357.7256};
+					id=100;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Charlie_AAR";
+					init="GrpTK_Charlie = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Charlie Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8745.2744,309.41928,2357.7236};
+					id=101;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Charlie_RRPG";
+					init="GrpTK_Charlie = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Charlie Rifleman (RPG)";
+				};
+			};
+		};
+		class Item31
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8767.9434,312.56598,2406.9907};
+					id=102;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Delta_FTL";
+					init="GrpTK_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Delta Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8770.7363,312.16904,2404.7593};
+					id=103;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Delta_AR";
+					init="GrpTK_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8773.6191,312.02731,2404.667};
+					id=104;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Delta_AAR";
+					init="GrpTK_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8776.502,311.96545,2404.665};
+					id=105;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Delta_RRPG";
+					init="GrpTK_Delta = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Delta Rifleman (RPG)";
+				};
+			};
+		};
+		class Item32
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8768.2109,309.66855,2381.9197};
+					id=106;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Echo_FTL";
+					init="GrpTK_Echo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Echo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8771.0039,309.38211,2379.6882};
+					id=107;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Echo_AR";
+					init="GrpTK_Echo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Echo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8773.8867,309.30939,2379.5959};
+					id=108;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Echo_AAR";
+					init="GrpTK_Echo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Echo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8776.7695,309.29529,2379.5945};
+					id=109;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Echo_RRPG";
+					init="GrpTK_Echo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Echo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item33
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8768.5156,308.15372,2360.0137};
+					id=110;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Fox_FTL";
+					init="GrpTK_Fox = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Fox Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8771.3086,308.14215,2357.7822};
+					id=111;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_Fox_AR";
+					init="GrpTK_Fox = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Fox Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8774.1914,308.233,2357.6899};
+					id=112;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Fox_AAR";
+					init="GrpTK_Fox = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Fox Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8777.0742,308.37033,2357.688};
+					id=113;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_Fox_RRPG";
+					init="GrpTK_Fox = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Fox Rifleman (RPG)";
+				};
+			};
+		};
+		class Item34
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8797.8652,312.26031,2407.4136};
+					id=114;
+					side="EAST";
+					vehicle="TK_Soldier_MG_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_MMG1_G";
+					init="GrpTK_MMG1 = group this; nul = [""mmgg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Medium MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={8800.1436,312.07007,2405.4595};
+					id=115;
+					side="EAST";
+					vehicle="TK_Soldier_AMG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_MMG1_AG";
+					init="GrpTK_MMG1 = group this; nul = [""mmgag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item35
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8797.8652,309.97418,2381.2937};
+					id=116;
+					side="EAST";
+					vehicle="TK_Soldier_HAT_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_MAT1_G";
+					init="GrpTK_MAT1 = group this; nul = [""matg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={8800.1436,310.00833,2379.3396};
+					id=117;
+					side="EAST";
+					vehicle="TK_Soldier_HAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_MAT1_AG";
+					init="GrpTK_MAT1 = group this; nul = [""matag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item36
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8797.7002,309.47128,2358.1055};
+					id=118;
+					side="EAST";
+					vehicle="TK_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitTK_ST1_SN";
+					init="GrpTK_ST1 = group this; nul = [""sn"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Sniper Team 1 Sniper";
+				};
+				class Item1
+				{
+					position[]={8799.9775,309.53482,2356.1514};
+					id=119;
+					side="EAST";
+					vehicle="TK_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitTK_ST1_SP";
+					init="GrpTK_ST1 = group this; nul = [""sp"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Army Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item37
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={8842.6758,315.2767,2408.5088};
+					id=120;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item1
+				{
+					position[]={8846.0391,315.40353,2405.5083};
+					id=121;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item2
+				{
+					position[]={8849.334,315.75159,2405.5093};
+					id=122;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item3
+				{
+					position[]={8852.7734,316.14337,2405.6558};
+					id=123;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item4
+				{
+					position[]={8842.8203,314.69693,2401.1172};
+					id=124;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item5
+				{
+					position[]={8846.1152,315.04968,2401.1177};
+					id=125;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item6
+				{
+					position[]={8849.5527,315.44193,2401.2642};
+					id=126;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+				class Item7
+				{
+					position[]={8853.2129,315.91519,2401.1914};
+					id=127;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Army RESERVED FOR JIP";
+				};
+			};
+		};
+		class Item38
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7773.4224,296.57831,1807.5659};
+					id=128;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitUN_CO";
+					init="GrpUN_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Commander";
+				};
+				class Item1
+				{
+					position[]={7775.5,296.47452,1805.6747};
+					id=196;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_CO_M";
+					init="GrpUN_CO = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Medic";
+				};
+			};
+		};
+		class Item39
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7773.9458,296.17514,1793.4034};
+					id=129;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitUN_DC";
+					init="GrpUN_DC = group this; nul = [""dc"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={7775.9585,296.13718,1791.6832};
+					id=197;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_DC_M";
+					init="GrpUN_DC = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Medic";
+				};
+			};
+		};
+		class Item40
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7795.1685,296.04001,1771.8053};
+					id=130;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_Alpha_FTL";
+					init="GrpUN_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Alpha Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={7798.2813,296.04001,1769.0321};
+					id=131;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Alpha_AR";
+					init="GrpUN_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={7801.335,296.04001,1768.9497};
+					id=132;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Alpha_AAR";
+					init="GrpUN_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={7804.7764,296.04001,1768.7635};
+					id=133;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Alpha_RRPG";
+					init="GrpUN_Alpha = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Alpha Rifleman (RPG)";
+				};
+			};
+		};
+		class Item41
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8439.3721,298.01447,2124.3879};
+					id=134;
+					side="WEST";
+					vehicle="BAF_Soldier_SL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitBAF_CO";
+					init="GrpBAF_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Commander";
+				};
+				class Item1
+				{
+					position[]={8442.2041,297.98096,2122.0784};
+					id=169;
+					side="WEST";
+					vehicle="BAF_Soldier_Medic_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_CO_M";
+					init="GrpBAF_CO = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Medic";
+				};
+			};
+		};
+		class Item42
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7795.4707,296.04001,1745.5068};
+					id=135;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_Bravo_FTL";
+					init="GrpUN_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Bravo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={7798.5835,296.04001,1742.7336};
+					id=136;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Bravo_AR";
+					init="GrpUN_Bravo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Bravo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={7801.6372,296.04001,1742.6512};
+					id=137;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Bravo_AAR";
+					init="GrpUN_Bravo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Bravo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={7805.0786,296.04001,1742.4651};
+					id=138;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Bravo_RRPG";
+					init="GrpUN_Bravo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Bravo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item43
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7795.5898,296.04001,1720.6334};
+					id=139;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_Charlie_FTL";
+					init="GrpUN_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Charlie Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={7798.7026,296.04001,1717.8602};
+					id=140;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Charlie_AR";
+					init="GrpUN_Charlie = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Charlie Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={7801.7563,296.04001,1717.7778};
+					id=141;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Charlie_AAR";
+					init="GrpUN_Charlie = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Charlie Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={7805.1978,296.04001,1717.5917};
+					id=142;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Charlie_RRPG";
+					init="GrpUN_Charlie = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Charlie Rifleman (RPG)";
+				};
+			};
+		};
+		class Item44
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7829.9189,296.04001,1771.1285};
+					id=143;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_Delta_FTL";
+					init="GrpUN_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Delta Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={7833.0317,296.04001,1768.3553};
+					id=144;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Delta_AR";
+					init="GrpUN_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={7836.0854,296.04001,1768.2729};
+					id=145;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Delta_AAR";
+					init="GrpUN_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={7839.5269,296.04001,1768.0868};
+					id=146;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Delta_RRPG";
+					init="GrpUN_Delta = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Delta Rifleman (RPG)";
+				};
+			};
+		};
+		class Item45
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7829.3447,296.04001,1744.7507};
+					id=147;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_Echo_FTL";
+					init="GrpUN_Echo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Echo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={7832.4575,296.04001,1741.9775};
+					id=148;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Echo_AR";
+					init="GrpUN_Echo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Echo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={7835.5112,296.04001,1741.8951};
+					id=149;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Echo_AAR";
+					init="GrpUN_Echo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Echo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={7838.9526,296.04001,1741.709};
+					id=150;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Echo_RRPG";
+					init="GrpUN_Echo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Echo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item46
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7828.9458,296.04001,1720.4792};
+					id=151;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_Fox_FTL";
+					init="GrpUN_Fox = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Fox Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={7832.0586,296.04001,1717.7061};
+					id=152;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Fox_AR";
+					init="GrpUN_Fox = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Fox Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={7835.1123,296.04001,1717.6237};
+					id=153;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Fox_AAR";
+					init="GrpUN_Fox = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Fox Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={7838.5537,296.04001,1717.4375};
+					id=154;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_Fox_RRPG";
+					init="GrpUN_Fox = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Fox Rifleman (RPG)";
+				};
+			};
+		};
+		class Item47
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7864.2617,296.04001,1770.1412};
+					id=155;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_MG_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_MMG1_G";
+					init="GrpUN_MMG1 = group this; nul = [""mmgg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Medium MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={7867.3745,296.04001,1767.368};
+					id=156;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AMG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_MMG1_AG";
+					init="GrpUN_MMG1 = group this; nul = [""mmgag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item48
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7864.1289,296.04001,1743.4772};
+					id=157;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_AT_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_MAT1_G";
+					init="GrpUN_MAT1 = group this; nul = [""matg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={7867.2417,296.04001,1740.704};
+					id=158;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_MAT1_AG";
+					init="GrpUN_MAT1 = group this; nul = [""matag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item49
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7864.0571,296.04001,1719.527};
+					id=159;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUN_ST1_SN";
+					init="GrpUN_ST1 = group this; nul = [""sn"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Sniper Team 1 Sniper";
+				};
+				class Item1
+				{
+					position[]={7867.1699,296.04001,1716.7538};
+					id=160;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUN_ST1_SP";
+					init="GrpUN_ST1 = group this; nul = [""sp"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="UN Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item50
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={7904.4072,296.04001,1768.5171};
+					id=161;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item1
+				{
+					position[]={7908.7793,296.04001,1765.9132};
+					id=162;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item2
+				{
+					position[]={7912.4087,296.04001,1765.9117};
+					id=163;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item3
+				{
+					position[]={7916.2222,296.04001,1766.0986};
+					id=164;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item4
+				{
+					position[]={7904.9648,296.14661,1761.1677};
+					id=165;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item5
+				{
+					position[]={7908.5942,296.14673,1761.1663};
+					id=166;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item6
+				{
+					position[]={7912.4077,296.13177,1761.3531};
+					id=167;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+				class Item7
+				{
+					position[]={7916.4082,296.04001,1761.167};
+					id=168;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpUN_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="UN RESERVED FOR JIP";
+				};
+			};
+		};
+		class Item51
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8439.3721,297.76331,2108.1121};
+					id=170;
+					side="WEST";
+					vehicle="BAF_Soldier_SL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitBAF_DC";
+					init="GrpBAF_DC = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={8442.2041,297.82816,2105.8025};
+					id=171;
+					side="WEST";
+					vehicle="BAF_Soldier_Medic_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_DC_M";
+					init="GrpBAF_DC = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Medic";
+				};
+			};
+		};
+		class Item52
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8459.8848,298.44785,2083.1357};
+					id=172;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Alpha_FTL";
+					init="GrpBAF_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Alpha Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8462.7168,298.69131,2080.8262};
+					id=173;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Alpha_AR";
+					init="GrpBAF_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8466.2637,298.89627,2080.8262};
+					id=174;
+					side="WEST";
+					vehicle="BAF_Soldier_AAR_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Alpha_AAR";
+					init="GrpBAF_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8469.8105,299.09375,2080.5898};
+					id=175;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Alpha_AT";
+					init="GrpBAF_Alpha = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Alpha Rifleman (AT)";
+				};
+			};
+		};
+		class Item53
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8460.1172,298.45169,2060.9258};
+					id=176;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Bravo_FTL";
+					init="GrpBAF_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Bravo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8462.9492,298.63977,2058.6162};
+					id=177;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Bravo_AR";
+					init="GrpBAF_Bravo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Bravo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8466.4961,298.93982,2058.6162};
+					id=178;
+					side="WEST";
+					vehicle="BAF_Soldier_AAR_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Bravo_AAR";
+					init="GrpBAF_Bravo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Bravo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8470.0439,299.21738,2058.3799};
+					id=179;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Bravo_AT";
+					init="GrpBAF_Bravo = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Bravo Rifleman (AT)";
+				};
+			};
+		};
+		class Item54
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8461.2285,297.9649,2034.8134};
+					id=180;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Charlie_FTL";
+					init="GrpBAF_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Charlie Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8464.0605,298.12296,2032.5038};
+					id=181;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Charlie_AR";
+					init="GrpBAF_Charlie = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Charlie Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8467.6074,298.42938,2032.5038};
+					id=182;
+					side="WEST";
+					vehicle="BAF_Soldier_AAR_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Charlie_AAR";
+					init="GrpBAF_Charlie = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Charlie Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8471.1553,298.74225,2032.2675};
+					id=183;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Charlie_AT";
+					init="GrpBAF_Charlie = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Charlie Rifleman (AT)";
+				};
+			};
+		};
+		class Item55
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8493.6172,299.69421,2082.627};
+					id=184;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Delta_FTL";
+					init="GrpBAF_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Delta Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8496.4492,299.82214,2080.3174};
+					id=185;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Delta_AR";
+					init="GrpBAF_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8499.9961,299.8732,2080.3174};
+					id=186;
+					side="WEST";
+					vehicle="BAF_Soldier_AAR_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Delta_AAR";
+					init="GrpBAF_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8503.5449,299.97867,2080.0811};
+					id=187;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Delta_AT";
+					init="GrpBAF_Delta = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Delta Rifleman (AT)";
+				};
+			};
+		};
+		class Item56
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8493.3164,300.51505,2060.8235};
+					id=188;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Echo_FTL";
+					init="GrpBAF_Echo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Echo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8496.1484,300.72412,2058.5139};
+					id=189;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Echo_AR";
+					init="GrpBAF_Echo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Echo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8499.6953,300.87048,2058.5139};
+					id=190;
+					side="WEST";
+					vehicle="BAF_Soldier_AAR_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Echo_AAR";
+					init="GrpBAF_Echo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Echo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8503.2422,301.03244,2058.2776};
+					id=191;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Echo_AT";
+					init="GrpBAF_Echo = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Echo Rifleman (AT)";
+				};
+			};
+		};
+		class Item57
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8493.6689,300.95245,2034.6837};
+					id=192;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Fox_FTL";
+					init="GrpBAF_Fox = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Fox Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8496.501,300.98422,2032.3741};
+					id=193;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_MTP";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_Fox_AR";
+					init="GrpBAF_Fox = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Fox Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8500.0479,301.15729,2032.3741};
+					id=194;
+					side="WEST";
+					vehicle="BAF_Soldier_AAR_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Fox_AAR";
+					init="GrpBAF_Fox = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Fox Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8503.5957,301.25909,2032.1378};
+					id=195;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_Fox_AT";
+					init="GrpBAF_Fox = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Fox Rifleman (AT)";
+				};
+			};
+		};
+		class Item58
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8528.3594,301.17065,2081.9336};
+					id=198;
+					side="WEST";
+					vehicle="BAF_Soldier_MG_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_MMG1_G";
+					init="GrpBAF_MMG1 = group this; nul = [""mmgg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Medium MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={8531.1914,301.51266,2079.6238};
+					id=199;
+					side="WEST";
+					vehicle="BAF_Soldier_AMG_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_MMG1_AG";
+					init="GrpBAF_MMG1 = group this; nul = [""mmgag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item59
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8527.9453,302.71289,2055.3618};
+					id=200;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_MAT1_G";
+					init="GrpBAF_MAT1 = group this; nul = [""matg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={8530.7773,303.10754,2053.0522};
+					id=201;
+					side="WEST";
+					vehicle="BAF_Soldier_AAT_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_MAT1_AG";
+					init="GrpBAF_MAT1 = group this; nul = [""matag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item60
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8528.1914,302.48706,2031.2935};
+					id=202;
+					side="WEST";
+					vehicle="BAF_Soldier_Sniper_MTP";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitBAF_ST1_SN";
+					init="GrpBAF_ST1 = group this; nul = [""sn"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Sniper Team 1 Sniper";
+				};
+				class Item1
+				{
+					position[]={8531.0234,302.53421,2028.9839};
+					id=203;
+					side="WEST";
+					vehicle="BAF_Soldier_spotter_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitBAF_ST1_SP";
+					init="GrpBAF_ST1 = group this; nul = [""sp"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="British Army Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item61
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={8566.875,304.10245,2080.4907};
+					id=204;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item1
+				{
+					position[]={8571.3691,304.75262,2076.1155};
+					id=205;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item2
+				{
+					position[]={8574.6797,305.00443,2076.1138};
+					id=206;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item3
+				{
+					position[]={8578.1104,305.26697,2076.113};
+					id=207;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item4
+				{
+					position[]={8568.1758,304.90317,2070.793};
+					id=208;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item5
+				{
+					position[]={8571.4873,305.1611,2070.7915};
+					id=209;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item6
+				{
+					position[]={8574.918,305.42697,2070.7905};
+					id=210;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+				class Item7
+				{
+					position[]={8578.5859,305.71674,2070.9097};
+					id=211;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="British Army RESERVED FOR JIP";
+				};
+			};
+		};
+		class Item62
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8922.8232,323.76129,2341.6821};
+					id=212;
+					side="EAST";
+					vehicle="TK_INS_Warlord_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitINS_CO";
+					init="GrpINS_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Commander";
+				};
+				class Item1
+				{
+					position[]={8925.9189,324.06946,2338.8677};
+					id=213;
+					side="EAST";
+					vehicle="TK_INS_Bonesetter_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_CO_M";
+					init="GrpINS_CO = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Medic";
+				};
+			};
+		};
+		class Item63
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8923.123,324.1189,2325.8945};
+					id=214;
+					side="EAST";
+					vehicle="TK_INS_Warlord_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitINS_DC";
+					init="GrpINS_DC = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Deputy Commander";
+				};
+				class Item1
+				{
+					position[]={8926.2197,324.11166,2323.0796};
+					id=215;
+					side="EAST";
+					vehicle="TK_INS_Bonesetter_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_DC_M";
+					init="GrpINS_DC = group this; nul = [""m"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Medic";
+				};
+			};
+		};
+		class Item64
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8941.4648,323.18118,2312.0608};
+					id=216;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Alpha_FTL";
+					init="GrpINS_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Alpha Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8944.5605,322.83585,2309.2463};
+					id=217;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Alpha_AR";
+					init="GrpINS_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8947.2188,322.62158,2309.1101};
+					id=218;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Alpha_AAR";
+					init="GrpINS_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8949.916,322.50223,2309.1223};
+					id=219;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Alpha_RRPG";
+					init="GrpINS_Alpha = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Alpha Rifleman (RPG)";
+				};
+			};
+		};
+		class Item65
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8941.6602,320.42285,2286.001};
+					id=220;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Bravo_FTL";
+					init="GrpINS_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Bravo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8944.7559,319.76062,2283.1865};
+					id=221;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Bravo_AR";
+					init="GrpINS_Bravo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Bravo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8947.4141,319.52451,2283.0503};
+					id=222;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Bravo_AAR";
+					init="GrpINS_Bravo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Bravo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8950.1113,319.35361,2283.0625};
+					id=223;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Bravo_RRPG";
+					init="GrpINS_Bravo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Bravo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item66
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8941.6602,315.31375,2259.0486};
+					id=224;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Charlie_FTL";
+					init="GrpINS_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Charlie Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8944.7559,314.47614,2256.2341};
+					id=225;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Charlie_AR";
+					init="GrpINS_Charlie = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Charlie Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8947.4141,314.28146,2256.0979};
+					id=226;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Charlie_AAR";
+					init="GrpINS_Charlie = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Charlie Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8950.1113,314.12958,2256.1101};
+					id=227;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Charlie_RRPG";
+					init="GrpINS_Charlie = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Charlie Rifleman (RPG)";
+				};
+			};
+		};
+		class Item67
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8975.6416,322.2905,2311.5352};
+					id=228;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Delta_FTL";
+					init="GrpINS_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Delta Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8978.7373,321.80371,2308.7207};
+					id=229;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Delta_AR";
+					init="GrpINS_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8981.3955,321.78036,2308.5845};
+					id=230;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Delta_AAR";
+					init="GrpINS_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8984.0928,321.79538,2308.5967};
+					id=231;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Delta_RRPG";
+					init="GrpINS_Delta = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Delta Rifleman (RPG)";
+				};
+			};
+		};
+		class Item68
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8976.2324,318.55762,2285.988};
+					id=232;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Echo_FTL";
+					init="GrpINS_Echo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Echo Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8979.3281,317.91772,2283.1736};
+					id=233;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Echo_AR";
+					init="GrpINS_Echo = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Echo Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8981.9863,317.76352,2283.0374};
+					id=234;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Echo_AAR";
+					init="GrpINS_Echo = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Echo Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8984.6836,317.63617,2283.0496};
+					id=235;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Echo_RRPG";
+					init="GrpINS_Echo = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Echo Rifleman (RPG)";
+				};
+			};
+		};
+		class Item69
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8976.5869,313.75906,2258.8328};
+					id=236;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Fox_FTL";
+					init="GrpINS_Fox = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Fox Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8979.6826,313.20499,2256.0183};
+					id=237;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_Fox_AR";
+					init="GrpINS_Fox = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Fox Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8982.3408,313.1799,2255.8821};
+					id=238;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Fox_AAR";
+					init="GrpINS_Fox = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Fox Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8985.0381,313.19067,2255.8943};
+					id=239;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_Fox_RRPG";
+					init="GrpINS_Fox = group this; nul = [""rrpg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Fox Rifleman (RPG)";
+				};
+			};
+		};
+		class Item70
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9008.6738,322.7468,2311.4934};
+					id=240;
+					side="EAST";
+					vehicle="TK_INS_Soldier_MG_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_MMG1_G";
+					init="GrpINS_MMG1 = group this; nul = [""mmgg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Medium MG Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={9011.7695,322.40811,2308.679};
+					id=241;
+					side="EAST";
+					vehicle="TK_INS_Soldier_MG_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_MMG1_AG";
+					init="GrpINS_MMG1 = group this; nul = [""mmgag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Medium MG Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item71
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9008.6152,318.34003,2285.2078};
+					id=242;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AT_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_MAT1_G";
+					init="GrpINS_MAT1 = group this; nul = [""matg"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Medium AT Team 1 Gunner";
+				};
+				class Item1
+				{
+					position[]={9011.71,318.03149,2282.3933};
+					id=243;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_MAT1_AG";
+					init="GrpINS_MAT1 = group this; nul = [""matag"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Medium AT Team 1 Assistant Gunner";
+				};
+			};
+		};
+		class Item72
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9008.6123,314.41263,2262.0078};
+					id=244;
+					side="EAST";
+					vehicle="TK_INS_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitINS_ST1_SN";
+					init="GrpINS_ST1 = group this; nul = [""sn"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Sniper Team 1 Sniper";
+				};
+				class Item1
+				{
+					position[]={9011.708,314.04474,2259.1934};
+					id=245;
+					side="EAST";
+					vehicle="TK_INS_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitINS_ST1_SP";
+					init="GrpINS_ST1 = group this; nul = [""sp"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="TK Militia Sniper Team 1 Spotter";
+				};
+			};
+		};
+		class Item73
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={9055.0117,325.43457,2312.052};
+					id=246;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item1
+				{
+					position[]={9057.1406,325.22314,2309.5161};
+					id=247;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item2
+				{
+					position[]={9059.5381,325.35443,2309.4709};
+					id=248;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item3
+				{
+					position[]={9061.9395,325.52219,2309.5161};
+					id=249;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item4
+				{
+					position[]={9054.7871,324.60968,2305.9836};
+					id=250;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item5
+				{
+					position[]={9057.1846,324.76193,2305.9385};
+					id=251;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item6
+				{
+					position[]={9059.5859,324.90225,2305.9836};
+					id=252;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+				class Item7
+				{
+					position[]={9062.2578,325.04004,2305.8921};
+					id=253;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="GrpTK_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="TK Militia RESERVED FOR JIP";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={8140.1953,358.37732,1495.2522};
+			name="Boot_Hill";
+			type="mil_box";
+		};
+		class Item1
+		{
+			position[]={8552.3545,403.90305,1494.9722};
+			name="center";
+			type="mil_box";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=5875250;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=15434763;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=477795;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

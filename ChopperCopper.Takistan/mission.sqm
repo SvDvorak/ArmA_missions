@@ -1,0 +1,426 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"takistan",
+		"ca_highcommand",
+		"ca_modules_marta",
+		"ca_missions_firstaidsystem",
+		"ca_missions_battlefieldclearance",
+		"ca_missions_alternativeinjurysimulation",
+		"ca_modules_functions",
+		"CACharacters_BAF",
+		"CAAir_E_AH6J",
+		"CAAir_E"
+	};
+	addOnsAuto[]=
+	{
+		"ca_modules_functions",
+		"cacharacters_e",
+		"ca_missions_battlefieldclearance",
+		"ca_missions_alternativeinjurysimulation",
+		"takistan"
+	};
+	randomSeed=4931020;
+	class Intel
+	{
+		briefingName="ChopperCopper";
+		briefingDescription="*** Insert mission description here. ***";
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=8;
+		minute=0;
+	};
+	class Groups
+	{
+		items=7;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7949.5659,300.0856,2427.0493};
+					id=0;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7954.9829,299.57101,2348.0762};
+					id=1;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="server";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8251.1777,296.04001,1955.7748};
+					id=2;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Alpha_FTL";
+					init="GrpUS_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Fireteam Leader";
+					synchronizations[]={11,10};
+				};
+				class Item1
+				{
+					position[]={8253.5996,296.04001,1952.8009};
+					id=3;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Alpha_AR";
+					init="GrpUS_Alpha = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8256.3516,296.04001,1952.6582};
+					id=4;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Alpha_AAR";
+					init="GrpUS_Alpha = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8259.7861,296.04001,1952.6292};
+					id=5;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Alpha_AT";
+					init="GrpUS_Alpha = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Alpha Rifleman (AT)";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8280.0703,296.04001,1955.6786};
+					id=6;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Delta_FTL";
+					init="GrpUS_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Fireteam Leader";
+					synchronizations[]={11,10};
+				};
+				class Item1
+				{
+					position[]={8282.4932,296.04001,1952.7047};
+					id=7;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitUS_Delta_AR";
+					init="GrpUS_Delta = group this; nul = [""ar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={8285.2451,296.04001,1952.562};
+					id=8;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Delta_AAR";
+					init="GrpUS_Delta = group this; nul = [""aar"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={8288.6797,296.04001,1952.533};
+					id=9;
+					side="WEST";
+					vehicle="US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitUS_Delta_AT";
+					init="GrpUS_Delta = group this; nul = [""rat"",this] execVM ""f\common\folk_assignGear.sqf"";";
+					description="US Army Delta Rifleman (AT)";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8249.9121,296.04001,2035.7366};
+					id=11;
+					side="LOGIC";
+					vehicle="BattleFieldClearance";
+					leader=1;
+					skill=0.60000002;
+					synchronizations[]={2,6};
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8309.8906,296.04001,2034.906};
+					id=10;
+					side="LOGIC";
+					vehicle="AlternativeInjurySimulation";
+					leader=1;
+					skill=0.60000002;
+					synchronizations[]={2,6};
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={8442.8857,305.74911,2442.7146};
+					azimut=224.99998;
+					id=12;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+				};
+				class Item1
+				{
+					position[]={8444.2998,306.29532,2448.3716};
+					azimut=224.99998;
+					id=13;
+					side="EAST";
+					vehicle="TK_Soldier_MG_EP1";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item2
+				{
+					position[]={8442.8857,306.4585,2449.7859};
+					azimut=224.99998;
+					id=14;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={8441.4707,306.70203,2451.2};
+					azimut=224.99998;
+					id=15;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item4
+				{
+					position[]={8440.0566,306.95544,2452.6143};
+					azimut=224.99998;
+					id=16;
+					side="EAST";
+					vehicle="TK_Soldier_MG_EP1";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item5
+				{
+					position[]={8438.6426,307.20886,2454.0283};
+					azimut=224.99998;
+					id=17;
+					side="EAST";
+					vehicle="TK_Soldier_LAT_EP1";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item6
+				{
+					position[]={8437.2285,307.45358,2455.4426};
+					azimut=224.99998;
+					id=18;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=0.2;
+				};
+				class Item7
+				{
+					position[]={8435.8145,307.6608,2456.8569};
+					azimut=224.99998;
+					id=19;
+					side="EAST";
+					vehicle="TK_Soldier_AAT_EP1";
+					skill=0.2;
+				};
+				class Item8
+				{
+					position[]={8434.4004,307.8667,2458.271};
+					azimut=224.99998;
+					id=20;
+					side="EAST";
+					vehicle="TK_Soldier_AMG_EP1";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8274.8389,296.04001,1997.4304};
+					type="SAD";
+					combatMode="RED";
+					formation="WEDGE";
+					speed="FULL";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={8230.9307,296.04001,2039.6611};
+			name="target_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=200;
+			b=150;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=5875250;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=15434763;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=477795;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
