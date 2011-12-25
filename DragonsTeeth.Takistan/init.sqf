@@ -1,4 +1,29 @@
-// MISSION CUSTOM SETUP IS AT THE BOTTOM
+
+//-----------------------------------------
+// Dvorak's default code, pre F2 loadup
+//-----------------------------------------
+// We must hide system markers immediately so that users won't have time to see them (F2 takes too long time to load)
+{_x setMarkerAlpha 0} foreach ["Boot_Hill","center"];
+//-----------------------------------------
+// /Dvorak's default code, pre F2 loadup
+//-----------------------------------------
+
+//-----------------------------------------
+// Mission specific code, pre F2 loadup
+//-----------------------------------------
+// We must hide system markers immediately so that users won't have time to see them (F2 takes too long time to load)
+{_x setMarkerAlpha 0} foreach [
+"Checkpoint1","Checkpoint1Defence","Checkpoint1Patrol",
+"Checkpoint2","Checkpoint2Defence","Checkpoint2Patrol",
+"Checkpoint3","Checkpoint3Defence","Checkpoint3Patrol",
+"ExtractionPoint"];
+//-----------------------------------------
+// /Mission specific code, pre F2 loadup
+//-----------------------------------------
+
+// ! ! ! ! !
+// Mission code that requires F2 to be initialized is at the bottom
+// ! ! ! ! !
 
 // ====================================================================================
 
@@ -27,8 +52,8 @@ f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRe
 // F2 - Mission Maker Teleport
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// f_missionMakerTeleport = 0;
-// [] execVM "f\common\f_missionMakerTeleport.sqf";
+f_missionMakerTeleport = 0;
+[] execVM "f\common\f_missionMakerTeleport.sqf";
 
 // ====================================================================================
 
@@ -206,6 +231,7 @@ server execVM "revive_init.sqf";
 
 // ====================================================================================
 
+
 // ----------------------------------------
 // UPSMON 
 //-----------------------------------------
@@ -233,10 +259,19 @@ mk_fTaskHint = compile (preprocessFileLineNumbers "fTaskHint.sqf");
 //-----------------------------------------
 
 //-----------------------------------------
-// Dvorak's default setup
+// Dvorak's default post F2 loadup
 //-----------------------------------------
 {_x setVariable ["BIS_noCoreConversations", true]} foreach f_var_men_BLU;
-{_x setMarkerAlpha 0} foreach ["Boot_Hill","center"];
 //-----------------------------------------
-// /Dvorak's default setup
+// /Dvorak's default post F2 loadup
+//-----------------------------------------
+
+//-----------------------------------------
+// Mission specific code, post F2 loadup
+//-----------------------------------------
+checkpoint1NrOfClearedDT = 0;
+checkpoint2NrOfClearedDT = 0;
+checkpoint3NrOfClearedDT = 0;
+//-----------------------------------------
+// /Mission specific code, post F2 loadup
 //-----------------------------------------
