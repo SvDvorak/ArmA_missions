@@ -40,7 +40,7 @@ waitUntil {T_INIT};
 // THE FOLLOWING CODE CAN BE MODIFIED
 // =====================================================================================================================
 // GENERAL REVIVE OPTIONS  (Off = 0, On = 1)
-_mission_end_function 			= 0;				//array no.0  - mission ends when all players are unconscious
+_mission_end_function 			= 1;				//array no.0  - mission ends when all players are unconscious
 _call_out_function 				= 1;				//array no.6  - whether a unit calls out while unconscious
 _water_dialog 					= 1;				//array no.45 - whether a dialog appears when a unit dies in water so that it can auto wash ashore 
 _unconscious_drag 				= 1;				//array no.39 - whether a unit can drag the bodies of unconscious players 

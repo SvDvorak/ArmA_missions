@@ -52,8 +52,8 @@ f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRe
 // F2 - Mission Maker Teleport
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-f_missionMakerTeleport = 0;
-[] execVM "f\common\f_missionMakerTeleport.sqf";
+//f_missionMakerTeleport = 0;
+//[] execVM "f\common\f_missionMakerTeleport.sqf";
 
 // ====================================================================================
 
@@ -259,19 +259,13 @@ mk_fTaskHint = compile (preprocessFileLineNumbers "fTaskHint.sqf");
 //-----------------------------------------
 
 //-----------------------------------------
-// Dvorak's default post F2 loadup
-//-----------------------------------------
-{_x setVariable ["BIS_noCoreConversations", true]} foreach f_var_men_BLU;
-//-----------------------------------------
-// /Dvorak's default post F2 loadup
-//-----------------------------------------
-
-//-----------------------------------------
 // Mission specific code, post F2 loadup
 //-----------------------------------------
 checkpoint1NrOfClearedDT = 0;
 checkpoint2NrOfClearedDT = 0;
 checkpoint3NrOfClearedDT = 0;
+
+engineerTypeName = "US_Soldier_Engineer_EP1";
 //-----------------------------------------
 // /Mission specific code, post F2 loadup
 //-----------------------------------------

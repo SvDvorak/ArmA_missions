@@ -37,43 +37,9 @@ checkpoint1Task setSimpleTaskDestination(getMarkerPos "Checkpoint1");
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Created by Andreas 'SvDvorak'
 <br/><br/><br/>
 Made with F2 (http://www.ferstaberinde.com/f2/en/)
-"]];
-
-// ====================================================================================
-
-// NOTES: ADMINISTRATION
-// The code below creates the administration sub-section of notes.
-
-_adm = player createDiaryRecord ["diary", ["Administration","
-<br/>
-*** Insert information on administration and logistics here. ***
-"]];
-
-// ====================================================================================
-
-// NOTES: EXECUTION
-// The code below creates the execution sub-section of notes.
-
-_exe = player createDiaryRecord ["diary", ["Execution","
-<br/>
-COMMANDER'S INTENT
-<br/>
-*** Insert very short summary of plan here. ***
-<br/><br/><br/>
-MOVEMENT PLAN
-<br/>
-*** Insert movement instructions here. ***
-<br/><br/><br/>
-FIRE SUPPORT PLAN
-<br/>
-*** Insert fire support instructions here. ***
-<br/><br/><br/>
-SPECIAL TASKS
-<br/>
-*** Insert instructions for specific units here. ***
 "]];
 
 // ====================================================================================
@@ -83,7 +49,7 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Use your engineers to get close and remove all Dragons Teeth blockades along the road from Bastam to Rasman.
 "]];
 
 // ====================================================================================
@@ -93,15 +59,17 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+In the last couple of days takistani insurgents have taken and secured the road leading north from Bastam to Rasman.
+Along the road they have set up Dragons Teeth to hinder any vehicle movement.
+Command wants this situation rectified, use your engineers to remove these concrete slabs so that US tanks can roll through.
 <br/><br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+Many small groups of lightly armed insurgents are patrolling the surrounding area of each blockade and there might also be hostiles holding nearby buildings.
 <br/><br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+None.
 <br/><br/><br/>
 "]];
 
