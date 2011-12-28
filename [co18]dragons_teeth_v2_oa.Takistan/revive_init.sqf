@@ -51,7 +51,7 @@ _time_b4_JIP_spawn_dialog 		= 10000;			//array no.17 - time before the respawn d
 _perpetual_server				= 0;				//array no.62 - NOT IMPLEMENTED
 // ==================================================================
 // LIST OF PLAYABLE UNITS
-NORRN_player_units = f_var_men_BLU;
+NORRN_player_units = f_var_men_players;
 // ==================================================================
 // WELCOME SCREEN
 //titleText ["Joining the Revive Test Mission\n\n(Make sure you check the mission notes for details on how the scripts work\nand the revive_readMe in the attached pdf file for the full notes on implementing \nthe scripts in your own missions and the options available)", "BLACK FADED", 0.6]; 	// This next line can be commented out or removed if it interferes with intro movies  

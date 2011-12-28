@@ -52,8 +52,8 @@ f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRe
 // F2 - Mission Maker Teleport
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-//f_missionMakerTeleport = 0;
-//[] execVM "f\common\f_missionMakerTeleport.sqf";
+f_missionMakerTeleport = 0;
+[] execVM "f\common\f_missionMakerTeleport.sqf";
 
 // ====================================================================================
 
@@ -261,9 +261,13 @@ mk_fTaskHint = compile (preprocessFileLineNumbers "fTaskHint.sqf");
 //-----------------------------------------
 // Mission specific code, post F2 loadup
 //-----------------------------------------
-checkpoint1NrOfClearedDT = 0;
-checkpoint2NrOfClearedDT = 0;
-checkpoint3NrOfClearedDT = 0;
+checkpoint1NrOfClearedDT = 2;
+checkpoint2NrOfClearedDT = 3;
+checkpoint3NrOfClearedDT = 7;
+
+checkpointTask1Finished = False;
+checkpointTask2Finished = False;
+checkpointTask3Finished = False;
 
 engineerTypeName = "US_Soldier_Engineer_EP1";
 //-----------------------------------------

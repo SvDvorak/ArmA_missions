@@ -379,7 +379,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint1Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -389,7 +389,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -398,7 +398,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -406,7 +406,7 @@ class Mission
 					id=37;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -414,7 +414,7 @@ class Mission
 					id=38;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -432,7 +432,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint1Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -442,7 +442,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -451,7 +451,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -459,7 +459,7 @@ class Mission
 					id=42;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -467,7 +467,7 @@ class Mission
 					id=43;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -485,7 +485,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint2Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -495,7 +495,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -504,7 +504,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -512,7 +512,7 @@ class Mission
 					id=47;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -520,7 +520,7 @@ class Mission
 					id=48;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -538,7 +538,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint2Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -548,7 +548,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -557,7 +557,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -565,15 +565,15 @@ class Mission
 					id=52;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
 					position[]={5634.8516,74.515572,9874.1572};
 					id=53;
 					side="EAST";
-					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					vehicle="TK_INS_Soldier_AT_EP1";
+					skill=0.5;
 				};
 			};
 		};
@@ -591,7 +591,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint2Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -601,7 +601,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -610,7 +610,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -618,7 +618,7 @@ class Mission
 					id=57;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -626,7 +626,7 @@ class Mission
 					id=58;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -644,7 +644,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -654,7 +654,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -663,7 +663,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -671,15 +671,15 @@ class Mission
 					id=62;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
 					position[]={6242.2295,60.718266,11097.726};
 					id=63;
 					side="EAST";
-					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					vehicle="TK_INS_Soldier_AT_EP1";
+					skill=0.5;
 				};
 			};
 		};
@@ -697,7 +697,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -707,7 +707,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -716,7 +716,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -724,7 +724,7 @@ class Mission
 					id=67;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -732,7 +732,7 @@ class Mission
 					id=68;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -750,7 +750,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -760,7 +760,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -769,7 +769,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -777,7 +777,7 @@ class Mission
 					id=72;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -785,7 +785,7 @@ class Mission
 					id=73;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -803,7 +803,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -813,7 +813,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -822,7 +822,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -830,7 +830,7 @@ class Mission
 					id=77;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -838,7 +838,7 @@ class Mission
 					id=78;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -856,7 +856,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -866,7 +866,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -875,7 +875,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -883,7 +883,7 @@ class Mission
 					id=82;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -891,7 +891,7 @@ class Mission
 					id=83;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -909,7 +909,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint2Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -919,7 +919,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -928,7 +928,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -936,7 +936,7 @@ class Mission
 					id=87;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -944,7 +944,7 @@ class Mission
 					id=88;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -962,7 +962,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint1Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -972,7 +972,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -981,7 +981,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -989,7 +989,7 @@ class Mission
 					id=92;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -997,7 +997,7 @@ class Mission
 					id=93;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -1015,7 +1015,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint2Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1025,7 +1025,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -1034,7 +1034,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -1042,7 +1042,7 @@ class Mission
 					id=97;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -1050,7 +1050,7 @@ class Mission
 					id=98;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -1068,7 +1068,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1078,7 +1078,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -1087,7 +1087,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -1095,7 +1095,7 @@ class Mission
 					id=104;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -1103,7 +1103,7 @@ class Mission
 					id=105;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -1121,7 +1121,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1131,7 +1131,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -1140,7 +1140,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -1148,15 +1148,15 @@ class Mission
 					id=109;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
 					position[]={6448.7637,70.222557,11164.523};
 					id=110;
 					side="EAST";
-					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					vehicle="TK_INS_Soldier_AT_EP1";
+					skill=0.5;
 				};
 			};
 		};
@@ -1174,7 +1174,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.7;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1184,7 +1184,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_AR_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item2
 				{
@@ -1193,7 +1193,7 @@ class Mission
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.5;
 				};
 				class Item3
 				{
@@ -1201,7 +1201,7 @@ class Mission
 					id=114;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 				class Item4
 				{
@@ -1209,7 +1209,7 @@ class Mission
 					id=115;
 					side="EAST";
 					vehicle="TK_INS_Soldier_EP1";
-					skill=0.2;
+					skill=0.5;
 				};
 			};
 		};
@@ -1502,7 +1502,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="checkpoint1NrOfClearedDT == 2";
-			expActiv="checkpoint1Task setTaskState ""SUCCEEDED""; [checkpoint1Task] call mk_fTaskHint;";
+			expActiv="checkpoint1Task setTaskState ""SUCCEEDED""; [checkpoint1Task] call mk_fTaskHint; checkpointTask1Finished = True;";
 			class Effects
 			{
 			};
@@ -1515,7 +1515,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="checkpoint2NrOfClearedDT == 3";
-			expActiv="checkpoint2Task setTaskState ""SUCCEEDED""; [checkpoint2Task] call mk_fTaskHint;";
+			expActiv="checkpoint2Task setTaskState ""SUCCEEDED""; [checkpoint2Task] call mk_fTaskHint; checkpointTask2Finished = True;";
 			class Effects
 			{
 			};
@@ -1528,7 +1528,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="checkpoint3NrOfClearedDT == 7";
-			expActiv="checkpoint3Task setTaskState ""SUCCEEDED""; [checkpoint3Task] call mk_fTaskHint;";
+			expActiv="checkpoint3Task setTaskState ""SUCCEEDED""; [checkpoint3Task] call mk_fTaskHint; checkpointTask3Finished = True;";
 			class Effects
 			{
 			};
@@ -1536,10 +1536,10 @@ class Mission
 		class Item3
 		{
 			position[]={6692.1982,49.556423,11575.024};
-			activationBy="EAST";
+			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="this && taskState checkpoint1Task == ""SUCCEEDED"" && taskState checkpoint2Task == ""SUCCEEDED"" && taskState checkpoint3Task == ""SUCCEEDED""";
+			expCond="this && checkpointTask1Finished && checkpointTask2Finished && checkpointTask3Finished";
 			expActiv="end = [1] execVM ""f\server\f_mpEndBroadcast.sqf"";";
 			class Effects
 			{
