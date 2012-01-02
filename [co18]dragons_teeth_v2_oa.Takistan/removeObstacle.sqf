@@ -16,7 +16,7 @@ while {_startTime + _minimumAnimationTime > time} do {
 	
 	if (!alive _player) exitWith
 	{
-		_dragonsTeeth addAction["Remove obstacle", "removeObstacle.sqf", nil, 6, True, True, "", "(_player distance _dragonsTeeth) < 3"];
+		_dragonsTeeth addAction["Remove obstacle", "removeObstacle.sqf", [_dragonsTeeth], 6, True, True, "", "(_target distance _this) < 6 && (typeof _this) == engineerTypeName"]
 		_player enableAI "ANIM";
 		_player switchMove "";
 	};

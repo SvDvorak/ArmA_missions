@@ -15,7 +15,7 @@
 // _task1 setTaskState "Created";
 
 extractionTask = player createSimpleTask["Extract"];
-extractionTask setSimpleTaskDescription["After clearing checkpoints, extract to the <marker name = 'ExtractionPoint'>north-east of Rasman</marker>.", "Extract", "Extract"];
+extractionTask setSimpleTaskDescription["After clearing the checkpoints, extract to the <marker name = 'ExtractionPoint'>north-east of Rasman</marker>.", "Extract", "Extract"];
 extractionTask setSimpleTaskDestination(getMarkerPos "ExtractionPoint");
 
 checkpoint3Task = player createSimpleTask["Clear checkpoint 3"];

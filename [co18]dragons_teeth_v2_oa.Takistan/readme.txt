@@ -35,7 +35,7 @@ Version | Date | Notes
 02. COPYRIGHT STATEMENT
 =======================
 
-This mission is (c)[ CCYY ] [ Insert your name(s) here. ]. All rights reserved.
+This mission is (c)2012 Andreas Wilcox. All rights reserved.
 
 
 
@@ -44,7 +44,7 @@ This mission is (c)[ CCYY ] [ Insert your name(s) here. ]. All rights reserved.
 
 This mission (hereafter 'Software') contains files to be used in the PC CD-ROM simulator "Armed Assault 2" (hereafter 'ArmA2'). To use the Software you must agree to the following conditions of use:
 
-1. [ Insert your name(s) here. ] (hereafter 'The Author(s)') grant to you a personal, non-exclusive license to use the Software.
+1. Andreas Wilcox (hereafter 'The Author(s)') grant to you a personal, non-exclusive license to use the Software.
 
 2. The commercial exploitation of the Software without written permission from The Author(s) is expressly prohibited.
 
@@ -62,7 +62,7 @@ The Software is distributed without any warranty; without even the implied warra
 
 To begin using the Software:
 
-1. Move the folder [ Insert name of your mission file here. ] into the following directory:
+1. Move the folder [co18]dragons_teeth_v2_oa.Takistan into the following directory:
 
 \Program Files\Bohemia Interactive\ArmA 2\MPMissions\
 
@@ -73,16 +73,13 @@ To begin using the Software:
 
 To play this mission the following addons are required:
 
-[ Insert name of addon ] - [URL for downloadable copy of the addon ]
-[ Insert name of addon ] - [URL for downloadable copy of the addon ]
-[ Insert name of addon ] - [URL for downloadable copy of the addon ]
+None
 
 
 07. NOTES
 =========
 
-[ Insert your notes here. ]
-
+A small mission made for ARPS.
 
 
 08. CHANGE HISTORY
@@ -90,6 +87,5 @@ To play this mission the following addons are required:
 
 Version | Date
 
+2.0.0 | 
 [ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ]
-[ Insert change #1 here. ]
-[ Insert change #2 here. ]

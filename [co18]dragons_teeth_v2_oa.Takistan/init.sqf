@@ -261,9 +261,9 @@ mk_fTaskHint = compile (preprocessFileLineNumbers "fTaskHint.sqf");
 //-----------------------------------------
 // Mission specific code, post F2 loadup
 //-----------------------------------------
-checkpoint1NrOfClearedDT = 2;
-checkpoint2NrOfClearedDT = 3;
-checkpoint3NrOfClearedDT = 7;
+checkpoint1NrOfClearedDT = 0;
+checkpoint2NrOfClearedDT = 0;
+checkpoint3NrOfClearedDT = 0;
 
 checkpointTask1Finished = False;
 checkpointTask2Finished = False;
