@@ -81,6 +81,8 @@ GrpINS_Charlie setGroupId ["TK Insurgent Charlie FT -","GroupColor0"];
 GrpINS_Delta setGroupId ["TK Insurgent Delta FT -","GroupColor0"];
 GrpINS_Echo setGroupId ["TK Insurgent Echo FT -","GroupColor0"];
 GrpINS_Fox setGroupId ["TK Insurgent Fox FT -","GroupColor0"];
+GrpINS_M2 setGroupId ["TK Insurgent M2 -","GroupColor0"];
+GrpINS_SPG setGroupId ["TK Insurgent SPG -","GroupColor0"];
 GrpINS_MMG1 setGroupId ["TK Insurgent MMG1 -","GroupColor0"];
 GrpINS_MAT1 setGroupId ["TK Insurgent MAT1 -","GroupColor0"];
 GrpINS_ST1 setGroupId ["TK Insurgent ST1 -","GroupColor0"];

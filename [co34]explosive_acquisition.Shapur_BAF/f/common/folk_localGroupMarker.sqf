@@ -96,6 +96,16 @@ if ((count (units _grp)) == 0) then
 				_mkrName setMarkerSizeLocal [0.8, 0.8];
 				_mkrName setMarkerTextLocal _mkrText;
 			};
+// Vehicle Squad
+			case 7:
+			{
+				_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
+				_mkr setMarkerShapeLocal "ICON";
+				_mkrName setMarkerTypeLocal "B_MOTOR_INF";
+				_mkrName setMarkerColorLocal _mkrColor;
+				_mkrName setMarkerSizeLocal [0.8, 0.8];
+				_mkrName setMarkerTextLocal _mkrText;
+			};
 // Medium MG
 			case 3:
 			{

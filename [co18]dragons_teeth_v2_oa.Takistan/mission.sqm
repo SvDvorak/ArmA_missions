@@ -379,7 +379,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint1Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -432,7 +432,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint1Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -485,7 +485,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint2Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -538,7 +538,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint2Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -591,7 +591,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint2Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -644,7 +644,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -697,7 +697,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -750,7 +750,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -803,7 +803,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -856,7 +856,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -909,7 +909,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint2Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -962,7 +962,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint1Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1015,7 +1015,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint2Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1068,7 +1068,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1121,7 +1121,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Patrol"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1
@@ -1174,7 +1174,7 @@ class Mission
 					vehicle="TK_INS_Soldier_TL_EP1";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.7;
+					skill=0.69999999;
 					init="nul=[this,""Checkpoint3Defence"",""nomove"",""random"",""delete:"",300] execVM ""scripts\upsmon.sqf"";";
 				};
 				class Item1

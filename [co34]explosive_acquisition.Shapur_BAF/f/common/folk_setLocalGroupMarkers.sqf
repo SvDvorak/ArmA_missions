@@ -67,6 +67,8 @@ switch (faction player) do
 		["GrpINS_Delta", 1, "D", "ColorRed"] execVM "f\common\folk_localGroupMarker.sqf";
 		["GrpINS_Echo", 1, "E", "ColorBlue"] execVM "f\common\folk_localGroupMarker.sqf";
 		["GrpINS_Fox", 1, "F", "ColorGreen"] execVM "f\common\folk_localGroupMarker.sqf";
+		["GrpINS_M2", 1, "M2", "ColorOrange"] execVM "f\common\folk_localGroupMarker.sqf";
+		["GrpINS_SPG", 1, "SPG", "ColorOrange"] execVM "f\common\folk_localGroupMarker.sqf";
 		["GrpINS_MMG1", 3, "MMG1", "ColorOrange"] execVM "f\common\folk_localGroupMarker.sqf";
 		["GrpINS_MAT1", 4, "MAT1", "ColorOrange"] execVM "f\common\folk_localGroupMarker.sqf";
 		["GrpINS_ST1",  6, "ST1", "ColorOrange"] execVM  "f\common\folk_localGroupMarker.sqf";
