@@ -1,13 +1,3 @@
-
-//-----------------------------------------
-// Dvorak's default code, pre F2 loadup
-//-----------------------------------------
-// We must hide system markers immediately so that users won't have time to see them (F2 takes too long time to load)
-{_x setMarkerAlpha 0} foreach ["Boot_Hill","center"];
-//-----------------------------------------
-// /Dvorak's default code, pre F2 loadup
-//-----------------------------------------
-
 //-----------------------------------------
 // Mission specific code, pre F2 loadup
 //-----------------------------------------
@@ -111,7 +101,7 @@ f_endSelected = -1;
 // F2 - Kegetys Spectator Script
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-//[] execVM "f\common\f_spect\specta_init.sqf";
+[] execVM "f\common\f_spect\specta_init.sqf";
 
 // ====================================================================================
 
@@ -213,7 +203,7 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - Norrin's Revive Respawn
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-server execVM "revive_init.sqf";
+//server execVM "revive_init.sqf";
 
 // ====================================================================================
 

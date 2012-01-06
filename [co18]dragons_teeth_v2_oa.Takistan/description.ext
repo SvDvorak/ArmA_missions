@@ -15,8 +15,8 @@ class Header
 // F2 - Respawn Settings
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-respawn = 3;
-respawndelay = 4;
+respawn = 1;
+respawndelay = 3;
 
 // ============================================================================================
 
@@ -117,14 +117,14 @@ class Params
 // F2 - Norrin's Revive Respawn (Part 1)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-class f_param_lives
-{
-	title = "Number of Lives:";
-	values[] = {2000,1000,5,2};
-	texts[] = {"No Revive","Infinite - Easy ","5 - Normal","2  - Hard"};
-	default = 5;
-	code = "f_param_lives = %1";
-};
+//class f_param_lives
+//{
+//	title = "Number of Lives:";
+//	values[] = {2000,1000,5,2};
+//	texts[] = {"No Revive","Infinite - Easy ","5 - Normal","2  - Hard"};
+//	default = 5;
+//	code = "f_param_lives = %1";
+//};
         
 // ============================================================================================
 
@@ -142,8 +142,8 @@ class f_param_lives
 // F2 - Norrin's Revive Respawn (Part 2)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-disabledAI = 0;
-#include "f\revive\dialogs\revive.cpp"
+//disabledAI = 0;
+//#include "f\revive\dialogs\revive.cpp"
 
 // ============================================================================================
 

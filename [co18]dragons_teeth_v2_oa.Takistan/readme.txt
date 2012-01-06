@@ -27,8 +27,8 @@ README CONTENTS
 
 Version | Date | Notes
 
-2.0.0 | 
-[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ] | [ Insert short note here. ]
+2.0.0 | 06 01 2012 | Fixed ending, changed from Norrins to BIS first aid (Norrins was giving me scripting errors). Added RPG-men.
+1.0.0 | 25 12 2011 | Initial release.
 
 
 
@@ -87,5 +87,5 @@ A small mission made for ARPS.
 
 Version | Date
 
-2.0.0 | 
-[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ]
+2.0.0 | 06 01 2012
+1.0.0 | 25 12 2011

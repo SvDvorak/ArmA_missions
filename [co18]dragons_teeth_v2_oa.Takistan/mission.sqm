@@ -21,6 +21,8 @@ class Mission
 	{
 		"ca_modules_functions",
 		"cacharacters_e",
+		"ca_missions_battlefieldclearance",
+		"ca_missions_alternativeinjurysimulation",
 		"camisc3",
 		"cawheeled_e_hmmwv",
 		"takistan"
@@ -40,7 +42,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=23;
+		items=25;
 		class Item0
 		{
 			side="LOGIC";
@@ -96,6 +98,7 @@ class Mission
 					text="UnitUS_CO";
 					init="GrpUS_CO = group this; nul = [""co"",this] execVM ""f\common\folk_assignGear.sqf"";";
 					description="US Army Commander";
+					synchronizations[]={116,117};
 				};
 				class Item1
 				{
@@ -133,6 +136,7 @@ class Mission
 					text="UnitUS_Alpha_FTL";
 					init="GrpUS_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
 					description="US Army Alpha Fireteam Leader";
+					synchronizations[]={116,117};
 				};
 				class Item1
 				{
@@ -196,6 +200,7 @@ class Mission
 					text="UnitUS_Bravo_FTL";
 					init="GrpUS_Bravo = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
 					description="US Army Bravo Fireteam Leader";
+					synchronizations[]={116,117};
 				};
 				class Item1
 				{
@@ -259,6 +264,7 @@ class Mission
 					text="UnitUS_Charlie_FTL";
 					init="GrpUS_Charlie = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
 					description="US Army Charlie Fireteam Leader";
+					synchronizations[]={116,117};
 				};
 				class Item1
 				{
@@ -322,6 +328,7 @@ class Mission
 					text="UnitUS_Delta_FTL";
 					init="GrpUS_Delta = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";";
 					description="US Army Delta Fireteam Leader";
+					synchronizations[]={116,117};
 				};
 				class Item1
 				{
@@ -1213,6 +1220,44 @@ class Mission
 				};
 			};
 		};
+		class Item23
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5571.9688,143.27415,6349.7275};
+					id=116;
+					side="LOGIC";
+					vehicle="BattleFieldClearance";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={2,4,8,12,16};
+				};
+			};
+		};
+		class Item24
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5572.2354,142.21121,6334.2729};
+					id=117;
+					side="LOGIC";
+					vehicle="AlternativeInjurySimulation";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={2,4,8,12,16};
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -1388,20 +1433,8 @@ class Mission
 	};
 	class Markers
 	{
-		items=12;
+		items=10;
 		class Item0
-		{
-			position[]={5079.6753,231.86809,5760.4014};
-			name="Boot_Hill";
-			type="mil_box";
-		};
-		class Item1
-		{
-			position[]={5491.8345,309.13699,5760.1216};
-			name="center";
-			type="mil_box";
-		};
-		class Item2
 		{
 			position[]={5639.4795,74.385712,9884.543};
 			name="Checkpoint2Defence";
@@ -1412,7 +1445,7 @@ class Mission
 			b=80;
 			angle=-144.692;
 		};
-		class Item3
+		class Item1
 		{
 			position[]={6262.3823,59.725945,11198.201};
 			name="Checkpoint3Defence";
@@ -1423,7 +1456,7 @@ class Mission
 			b=100;
 			angle=-55.920101;
 		};
-		class Item4
+		class Item2
 		{
 			position[]={5633.7871,109.74179,8914.6875};
 			name="Checkpoint1Defence";
@@ -1434,7 +1467,7 @@ class Mission
 			b=85;
 			angle=166.72099;
 		};
-		class Item5
+		class Item3
 		{
 			position[]={5641.1528,81.919998,8911.5313};
 			name="Checkpoint1Patrol";
@@ -1444,7 +1477,7 @@ class Mission
 			a=300;
 			b=200;
 		};
-		class Item6
+		class Item4
 		{
 			position[]={5618.4702,74.464241,9866.7236};
 			name="Checkpoint2Patrol";
@@ -1455,7 +1488,7 @@ class Mission
 			b=200;
 			angle=202.98199;
 		};
-		class Item7
+		class Item5
 		{
 			position[]={6251.0171,59.910061,11178.772};
 			name="Checkpoint3Patrol";
@@ -1466,25 +1499,25 @@ class Mission
 			b=300;
 			angle=391.569;
 		};
-		class Item8
+		class Item6
 		{
 			position[]={5531.2715,81.73764,8898.8799};
 			name="Checkpoint1";
 			type="Empty";
 		};
-		class Item9
+		class Item7
 		{
 			position[]={5608.7974,74.414932,9857.1084};
 			name="Checkpoint2";
 			type="Empty";
 		};
-		class Item10
+		class Item8
 		{
 			position[]={6259.0659,59.773064,11190.456};
 			name="Checkpoint3";
 			type="Empty";
 		};
-		class Item11
+		class Item9
 		{
 			position[]={6698.0601,49.376881,11580.611};
 			name="ExtractionPoint";
